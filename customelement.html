@@ -1,0 +1,17 @@
+<!DOCTYPE html>     
+<html lang="en">
+    <head>
+        <script>
+            class Ryan extends HTMLElement{
+                connectedCallback(){
+                    this.innerHTML = "Ryan was here!"
+                }
+            }
+            
+            customElements.define("x-ryan", Ryan)
+        </script>
+    </head>
+    <body>
+        <x-ryan></x-ryan>
+    <body>
+</html>
